@@ -10,17 +10,30 @@ package jc01_2020.Kleautsevich.lesson03;
  *
  */
 
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Task3 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		long input = scanner.nextLong();
-		long i = 0;
-		while (input > 0) {
-			i = input % 10;
-			input = input / 10;
-			System.out.print(i + "");
+
+		boolean negative = false;
+		if (input < 0)  {
+			negative = true;
+			input = -input;
 		}
+
+		String result = "";
+		while (input > 0) {
+			long i = input % 10;
+			input = input / 10;
+			result += i;
+		}
+
+		if (negative) {
+			result = "-" + result;
+		}
+		System.out.println(result);
 	}
 }

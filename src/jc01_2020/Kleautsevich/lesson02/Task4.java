@@ -19,23 +19,14 @@ public class Task4 {
         int first = scanner.nextInt();
         int second = scanner.nextInt();
         int third = scanner.nextInt();
-        if (first > second && first <= third) {
+        if (first > second && first <= third || first <= second && first > third) {
                 System.out.println("среднее число: " + first);
-            } else {
-                if (first <= second && first > third) {
-                    System.out.println("среднее число: " + first);
                 } else {
-                    if (second > first && second <= third) {
+                    if (second > first && second <= third || second <= first && second > third) {
                         System.out.println("среднее число: " + second);
-                    } else {
-                        if (second <= first && second > third) {
-                            System.out.println("среднее число: " + second);
                         } else {
                             System.out.println("среднее число: " + third);
-
                         }
                     }
                 }
             }
-        }
-    }

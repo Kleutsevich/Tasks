@@ -27,12 +27,11 @@ public class Task5 {
 			} else {
 				if (year % 100 == 0 && year % 400 != 0) {
 					System.out.println("Обычный");
-				} else {
-					if (year % 4 == 0) {
+				} else
+					{
 						System.out.println("Високосный");
 					}
 				}
 			}
 		}
 	}
-}

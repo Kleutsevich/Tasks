@@ -16,6 +16,9 @@ public class Task1 {
         Scanner scanner = new Scanner(System.in);
         long input = scanner.nextLong();
         long n = 0;
+        if (input < 0) {
+            input = - input;
+        }
         while (input > 0) {
             long i = input % 10;
             input = input / 10;
