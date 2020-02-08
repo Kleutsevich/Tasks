@@ -1,4 +1,4 @@
-package jc01_2020.lesson05;
+package jc01_2020.Kleautsevich.lesson05;
 
 /*
  *
