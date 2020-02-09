@@ -32,18 +32,14 @@ public class Task5 {
 			column[j] = sum;
 			sum = 0;
 		}
-
 		int max_index = 0;
 		int max = column[max_index];
-
 		for (int j = 0; j < column.length; j++) {
 			if (column[j] > max) {
 				max_index = j;
 				max = column[j];
 			}
 		}
-		System.out.println("====");
-			System.out.println(max);
 		System.out.println(max_index);
 	}
 }

@@ -27,9 +27,11 @@ public class Task3 {
         int minIndex = 0;
         int min = array[minIndex];
         for (int i = 0; i < array.length; i++) {
-			if (array[i] < min)
-				min = array[i];
-		}
-        System.out.println(min);
+            if (array[i] < min) {
+                minIndex = i;
+                min = array[i];
+            }
+        }
+        System.out.println(minIndex);
     }
 }

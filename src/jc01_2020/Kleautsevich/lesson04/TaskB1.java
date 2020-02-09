@@ -24,7 +24,7 @@ package jc01_2020.Kleautsevich.lesson04;
 import java.util.Scanner;
 
 public class TaskB1 {
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int[] array = new int[7];
 		for (int i = 0; i < array.length; i++) {
@@ -32,6 +32,18 @@ public class TaskB1 {
 		}
 		int a = scanner.nextInt();
 		int b = scanner.nextInt();
+
+
+		//       int[] array2 = new int[7];
+		//       for (int i = 0; i < array.length; i++) {
+		//           if (array[i] < a || array[i] > b) {
+		//               array2[i] = array[i];
+		//           }
+		//       }
+		//       for (int i = 0; i < array2.length; i++)
+		//       System.out.println(array2[i]);
+
+
 		int zero = 0;
 		for (int i = 0; i < array.length; i++) {
 			if (array[i] >= a && array[i] <= b) {
@@ -43,5 +55,5 @@ public class TaskB1 {
 		for (int i = 0; i < zero; i++) {
 			System.out.println(0);
 		}
-    }
+	}
 }

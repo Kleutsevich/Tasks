@@ -19,7 +19,6 @@ public class Task4 {
         int[] array = new int[7];
         for (int i = 0; i < array.length; i++) {
             array[i] = scanner.nextInt();
-            array[i] = array[i];
         }
         int maxIndex = 0;
         int max = array[maxIndex];
@@ -34,7 +33,6 @@ public class Task4 {
                 minIndex = i;
                 min = array[i];
             }
-
         }
         int startIndex = minIndex;
         int endIndex = maxIndex;
@@ -46,7 +44,7 @@ public class Task4 {
         for (int j = startIndex + 1; j < endIndex; j++) {
             sum += array[j];
         }
-		System.out.println(sum);
+        System.out.println(sum);
     }
 }
 
