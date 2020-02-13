@@ -16,7 +16,17 @@ import java.util.Scanner;
 
 public class Task2 {
     public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		String str = scanner.nextLine();
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
+
+        str = str.replaceAll(" ", "");
+
+            StringBuilder newStr = new StringBuilder(str);
+            newStr.reverse();
+            if (newStr.toString().equalsIgnoreCase(str)) {
+                System.out.println("Да");
+            } else {
+                System.out.println("Нет");
+            }
+        }
     }
-}

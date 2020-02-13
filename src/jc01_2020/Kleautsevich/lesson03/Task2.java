@@ -31,12 +31,11 @@ public class Task2 {
                     if (n > secret) {
                         System.out.println("больше");
                     } else {
-                        if (n == secret) {
                             System.out.println("Вы угадали " + secret);
+                            break;
                         }
                     }
                 }
             }
         }
     }
-}

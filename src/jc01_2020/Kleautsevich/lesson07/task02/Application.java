@@ -1,4 +1,4 @@
-package jc01_2020.lesson07.task02;
+package jc01_2020.Kleautsevich.lesson07.task02;
 
 /*
 *
@@ -15,5 +15,6 @@ package jc01_2020.lesson07.task02;
 public class Application {
 
 	public static void main(String[] args) {
+
 	}
 }

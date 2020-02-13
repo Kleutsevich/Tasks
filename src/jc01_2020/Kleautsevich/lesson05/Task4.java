@@ -21,5 +21,12 @@ public class Task4 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		String str = scanner.nextLine();
+		char[] Array;
+		String strEnd = str.replaceAll("\\D", "");
+		Array = strEnd.toCharArray();
+		for (int i = 0; i < Array.length; i++) {
+			System.out.println(Array[i]);
+		}
 	}
 }
+

@@ -16,5 +16,9 @@ public class Task3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
+        String old = scanner.nextLine();
+        String output = scanner.nextLine();
+        String newStr = str.replace(old, output);
+        System.out.println(newStr);
     }
 }
