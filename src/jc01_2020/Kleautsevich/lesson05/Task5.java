@@ -18,6 +18,7 @@ public class Task5 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		String str = scanner.nextLine();
+		str = str.replaceAll(" ", "");
 		StringBuilder sb = new StringBuilder();
 		for (int i = 0; i < str.length(); i++) {
 			String str2 = str.substring(i, i + 1);

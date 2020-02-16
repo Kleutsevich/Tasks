@@ -15,18 +15,17 @@ package jc01_2020.Kleautsevich.lesson05;
  *
  */
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Task4 {
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		String str = scanner.nextLine();
-		char[] Array;
-		String strEnd = str.replaceAll("\\D", "");
-		Array = strEnd.toCharArray();
-		for (int i = 0; i < Array.length; i++) {
-			System.out.println(Array[i]);
-		}
-	}
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
+        char[] array;
+        String strOutput = str.replaceAll("\\D", "");
+        array = strOutput.toCharArray();
+        for (int i = 0; i < array.length; i++)
+        System.out.println(array[i]);
+    }
 }
-
