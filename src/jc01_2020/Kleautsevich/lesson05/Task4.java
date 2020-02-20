@@ -22,10 +22,9 @@ public class Task4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
-        char[] array;
-        String strOutput = str.replaceAll("\\D", "");
-        array = strOutput.toCharArray();
-        for (int i = 0; i < array.length; i++)
-        System.out.println(array[i]);
+        String strOutput = str.replaceAll("\\D", " ");
+        String[] strings = strOutput.trim().split(" +");
+        for (int i = 0; i < strings.length; i++)
+        System.out.println(strings[i]);
     }
 }

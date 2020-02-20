@@ -19,7 +19,7 @@ public class TaskB2 {
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
         boolean result = false;
-String regexp = "^[A-ZА-Я]{1}[A-Za-zА-Яа-я]+[-]{1}[A-ZА-Я]{1}[A-Za-zА-Яа-я]+";
+String regexp = "^[A-Z]{1}[A-Za-z]+-{1}[A-Z]{1}[A-Za-z]+[A-Za-z]$|^[А-Я]{1}[А-Яа-я]+-{1}[А-Я]{1}[А-Яа-я]+[А-Яа-я]$";
 		Pattern pattern = Pattern.compile(regexp);
 		Matcher matcher = pattern.matcher(str);
 
