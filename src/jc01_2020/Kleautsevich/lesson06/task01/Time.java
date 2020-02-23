@@ -15,4 +15,9 @@ public class Time {
     int getFullSeconds() {
         return seconds + 60 * minutes + 60 * 60 * hours;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s hours, %s minutes, %s seconds", hours, minutes, seconds);
+    }
 }

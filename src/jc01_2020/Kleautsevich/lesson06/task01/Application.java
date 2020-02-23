@@ -6,6 +6,7 @@ public class Application {
         System.out.println(time.getFullSeconds());
 
         TimeLength timeLength = new TimeLength(5000);
-        System.out.println(time.toString());
+        Time newTime = timeLength.convertSecondsToTime();
+        System.out.println(newTime);
     }
 }
