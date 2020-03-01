@@ -16,8 +16,14 @@ package jc01_2020.Kleautsevich.lesson07.task01;
 public class Application {
 
     public static void main(String[] args) {
-        Box box = new Box(1200.0d);
+        Box box = new Box(200.0d);
         Cylinder cylinder = new Cylinder(2.8, 5);
-		System.out.println(box.add(cylinder));
+        Parallelepiped parallelepiped = new Parallelepiped(4, 5, 6.2);
+        Pyramid pyramid = new Pyramid(20.6, 6);
+        Sphere sphere = new Sphere(4.1);
+        System.out.println(box.add(cylinder));
+        System.out.println(box.add(parallelepiped));
+        System.out.println(box.add(pyramid));
+        System.out.println(box.add(sphere));
     }
 }

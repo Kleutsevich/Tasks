@@ -17,7 +17,7 @@ public class Application {
         };
         MonitoringSystem thirdSystem = new MonitoringSystem() {
             @Override
-            public void startMonitoring() {
+            public void startMonitoring()  {
                 System.out.println("third");
             }
         };

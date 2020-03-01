@@ -16,19 +16,16 @@ public class Application {
 
     static class Cat {
     }
-
     interface Filter {
         boolean apply(Object o);
-
     }
-
     private static <T> T[] filter(Object[] array, Filter filter) {
         List<T> result = new ArrayList<>();
-		for (Object o : array) {
-			if (filter.apply(o)) {
-				result.add((T) o);
-			}
-		}
+        for (Object o : array) {
+            if (filter.apply(o)) {
+                result.add((T) o);
+            }
+        }
         return (T[]) result.toArray();
     }
 
@@ -37,13 +34,13 @@ public class Application {
         Object[] array = {"String", 1, 2.0, new Cat(), 85L, new Cat()};
 
         Filter filter = new Filter() {
-			@Override
-			public boolean apply(Object o) {
-				return o instanceof Number;
-			}
-		};
-		Object[] arr = filter(array,filter);
-		System.out.println(Arrays.toString(arr));
+            @Override
+            public boolean apply(Object o) {
+                return o instanceof Number;
+            }
+        };
+        Object[] arr = filter(array, filter);
+        System.out.println(Arrays.toString(arr));
     }
 
 }
