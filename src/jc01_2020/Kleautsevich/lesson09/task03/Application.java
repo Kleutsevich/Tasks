@@ -29,7 +29,7 @@ public class Application {
 			strings.remove(strings.size() -1);
 			n++;
 		}
-		String[] stringsArray = strings.toArray(new String[strings.size()]);
+		String[] stringsArray = strings.toArray(new String[0]);
 		System.out.println(Arrays.toString(stringsArray));
 	}
 
